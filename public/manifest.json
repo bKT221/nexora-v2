@@ -1,0 +1,64 @@
+{
+  "name": "Nexora — La Super-App Africaine",
+  "short_name": "Nexora",
+  "description": "Éducation, Business, Social et IA — Tout-en-Un. Power in your hands, offline or online.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1a14",
+  "theme_color": "#2d8a6e",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["education", "business", "social", "productivity"],
+  "lang": "fr",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "IA Nexa",
+      "short_name": "Nexa",
+      "description": "Ouvrir l'assistant IA",
+      "url": "/?tab=nexa",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Académie",
+      "short_name": "Académie",
+      "description": "Accéder aux cours et quiz",
+      "url": "/?tab=academie",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Marketplace",
+      "short_name": "Marketplace",
+      "description": "Acheter et vendre sur le marketplace",
+      "url": "/?tab=marketplace",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
