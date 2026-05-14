@@ -1,4 +1,4 @@
-'useuse client'
+'use client'
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion'
@@ -168,7 +168,6 @@ export default function Accueil() {
       {/* Welcome Banner with Animated Gradient */}
       <motion.div variants={slideUp}>
         <div className="welcome-gradient rounded-2xl p-5 text-white relative overflow-hidden">
-          {/* Decorative elements */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/10 blur-2xl" />
             <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-full bg-white/5 blur-xl" />
@@ -181,7 +180,7 @@ export default function Accueil() {
                 </h2>
                 <p className="text-white/80 text-sm mt-1">
                   {profile === 'etudiant'
-                    ? 'Prêt à apprendre et progresser aujourd\'hui ?'
+                    ? "Prêt à apprendre et progresser aujourd'hui ?"
                     : 'Construisons votre succès business aujourd\'hui !'}
                 </p>
               </div>
@@ -221,9 +220,8 @@ export default function Accueil() {
         </button>
       </motion.div>
 
-      {/* Stats Row — with Animated Counters */}
+      {/* Stats Row */}
       <motion.div variants={slideUp} className="grid grid-cols-3 gap-3">
-        {/* XP Card */}
         <motion.div
           className="glass-premium rounded-xl p-4 text-center space-y-2 hover-lift particle-sparkle"
           whileHover={{ scale: 1.02 }}
@@ -239,7 +237,6 @@ export default function Accueil() {
           <GradientProgress value={(levelProgress / levelMax) * 100} />
         </motion.div>
 
-        {/* Level Card */}
         <motion.div
           className="glass-premium rounded-xl p-4 text-center space-y-2 hover-lift particle-sparkle"
           whileHover={{ scale: 1.02 }}
@@ -255,7 +252,6 @@ export default function Accueil() {
           <p className="text-xs text-muted-foreground">Prochain: {level + 1}</p>
         </motion.div>
 
-        {/* Streak Card */}
         <motion.div
           className="glass-premium rounded-xl p-4 text-center space-y-2 hover-lift pulse-border"
           whileHover={{ scale: 1.02 }}
@@ -272,7 +268,7 @@ export default function Accueil() {
         </motion.div>
       </motion.div>
 
-      {/* Daily Challenge Card — Pulsing Border */}
+      {/* Daily Challenge Card */}
       <motion.div variants={slideUp}>
         <motion.div
           className="glass-premium rounded-xl p-4 pulse-border relative overflow-hidden"
@@ -314,13 +310,12 @@ export default function Accueil() {
         </motion.div>
       </motion.div>
 
-      {/* Smart Cards - Horizontal Scroll */}
+      {/* Smart Cards */}
       <motion.div variants={slideUp}>
         <h2 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
           Pour vous
         </h2>
         <div className="flex gap-3 overflow-x-auto scrollbar-thin pb-2 -mx-1 px-1">
-          {/* Continue Reading Card */}
           <motion.div
             className="glass-premium rounded-xl p-4 min-w-[240px] space-y-3 shrink-0 hover-lift particle-sparkle"
             whileHover={{ scale: 1.02 }}
@@ -340,7 +335,6 @@ export default function Accueil() {
             </div>
           </motion.div>
 
-          {/* Daily Objective Card */}
           <motion.div
             className="glass-premium rounded-xl p-4 min-w-[200px] space-y-3 shrink-0 hover-lift"
             whileHover={{ scale: 1.02 }}
@@ -356,7 +350,6 @@ export default function Accueil() {
             </div>
           </motion.div>
 
-          {/* Pending Quiz Card */}
           <motion.div
             className="glass-premium rounded-xl p-4 min-w-[220px] space-y-3 shrink-0 hover-lift particle-sparkle"
             whileHover={{ scale: 1.02 }}
@@ -380,7 +373,7 @@ export default function Accueil() {
         </div>
       </motion.div>
 
-      {/* Quick Actions - 2x2 Grid */}
+      {/* Quick Actions */}
       <motion.div variants={slideUp}>
         <h2 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
           Actions rapides
@@ -447,7 +440,6 @@ export default function Accueil() {
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.2 }}
           >
-            {/* Coin Balance Card */}
             <div className="glass-premium rounded-xl p-4 hover-lift">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -478,7 +470,6 @@ export default function Accueil() {
             transition={{ duration: 0.2 }}
             className="space-y-2"
           >
-            {/* Activity Feed */}
             <div className="glass-premium rounded-xl px-4 py-3 flex items-center gap-3 hover-lift">
               <div className="w-8 h-8 rounded-full gradient-nexora flex items-center justify-center shrink-0">
                 <TrendingUp className="w-4 h-4 text-white" />
@@ -489,7 +480,6 @@ export default function Accueil() {
               </div>
               <span className="text-nexora text-xs font-medium">+25 XP</span>
             </div>
-
             <div className="glass-premium rounded-xl px-4 py-3 flex items-center gap-3 hover-lift">
               <div className="w-8 h-8 rounded-full bg-emerald/20 flex items-center justify-center shrink-0">
                 <BookOpen className="w-4 h-4 text-emerald" />
@@ -502,7 +492,6 @@ export default function Accueil() {
                 Nouveau
               </Badge>
             </div>
-
             <div className="glass-premium rounded-xl px-4 py-3 flex items-center gap-3 hover-lift">
               <div className="w-8 h-8 rounded-full gradient-gold flex items-center justify-center shrink-0">
                 <Star className="w-4 h-4 text-gold-foreground" />
@@ -513,7 +502,6 @@ export default function Accueil() {
               </div>
               <span className="text-gold text-xs font-medium golden-shimmer">+100 XP</span>
             </div>
-
             <div className="glass-premium rounded-xl px-4 py-3 flex items-center gap-3 hover-lift">
               <div className="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center shrink-0">
                 <Trophy className="w-4 h-4 text-amber" />
